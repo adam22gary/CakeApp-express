@@ -5,6 +5,8 @@ const IngredientController = require('./../controllers/Ingredient_controller');
 
 router.get('/', IngredientController.index);
 
+router.delete('/:id', IngredientController.destroy);
+
 router.post('/new', celebrate({
   body: {
     ingredients_name: Joi.string().required(),
@@ -16,7 +18,6 @@ router.post('/new', celebrate({
 }),
   IngredientController.newMethod
 );
-console.log('hello');
 router.post(
   '/',
   celebrate({
