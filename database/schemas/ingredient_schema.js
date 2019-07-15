@@ -16,6 +16,10 @@ const IngredientSchema = new Schema({
     ingredients_price: {
         type: String,
         required: true
+    },
+    ingredients_userID: {
+        type: String,
+        required: true
     }
 });
 

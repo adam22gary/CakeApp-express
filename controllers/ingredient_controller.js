@@ -3,39 +3,36 @@ const Ingredient = require("./../database/models/ingredient_model");
 async function create(req, res) {
     //const theModel = new Ingredient();
     const { ingredients_name, ingredients_quantity, ingredients_measurement, ingredients_price } = req.body;
-    await Ingredient.create({ ingredients_name, ingredients_quantity, ingredients_measurement, ingredients_price });
-    Ingredient.find({}, function(err, list){
-        if(err){
-            res.send("Ingredients list is empty!");
-            next();
-        }
-        return res.json(list); 
-    });
+    await Ingredient.create({ ingredients_name, ingredients_quantity, ingredients_measurement, ingredients_price, ingredients_userID: req.user._id });
+    const sendBack = await Ingredient.find({ 'ingredients_userID': req.user._id })
+        .catch(() => next("Ingredients list empty"));
+    return res.json(sendBack);
 };
 
-async function index(req, res) {
-    //{} = all
-    Ingredient.find({}, function(err, list){
-        if(err){
-            res.send("Ingredients list is empty!");
-            next();
-        }
-        return res.json(list); 
-    });
+async function index(req, res, next) {
+    const sendBack = await Ingredient.find({ 'ingredients_userID': req.user._id })
+        .catch(() => next("Ingredients list empty"));
+    return res.json(sendBack);
 }
 
-function newMethod(req, res) {
-    Ingredient.find({}, function(err, list){
-        if(err){
-            res.send("Ingredients list is empty!");
-            next();
-        }
-        return res.json(list); 
-    });
+async function newMethod(req, res, next) {
+    const sendBack = await Ingredient.find({ 'ingredients_userID': req.user._id })
+        .catch(() => next("Ingredients list empty"));
+    return res.json(sendBack);
+}
+
+async function destroy(req, res, next) {
+    const { id } = req.params;
+    await Ingredient.deleteOne({ '_id': id })
+        .catch(() => next("Ingredients list empty"));
+    const sendBack = await Ingredient.find({ 'ingredients_userID': req.user._id })
+        .catch(() => next("Ingredients list empty"));
+    return res.json(sendBack);
 }
 
 module.exports = {
     create,
     index,
-    newMethod
+    newMethod,
+    destroy
 }
