@@ -10,12 +10,12 @@ async function create(req, res) {
 }
 
 async function update(req, res) {
-    const { recipe_name, total_people, description, ingredients_array } = req.body;
-    await BaseCake.updateOne({ recipe_name, total_people, description, ingredients_array, baseCake_userID: req.user._id });
-    //redirect here
-    const sendBack = await BaseCake.find({ 'baseCake_userID': req.user._id })
-        .catch(() => next("BaseCake list empty"));
-    return res.json(sendBack);
+    // const { recipe_name, total_people, description, ingredients_array } = req.body;
+    // await BaseCake.updateOne({ recipe_name, total_people, description, ingredients_array, baseCake_userID: req.user._id });
+    // //redirect here
+    // const sendBack = await BaseCake.find({ 'baseCake_userID': req.user._id })
+    //     .catch(() => next("BaseCake list empty"));
+    // return res.json(sendBack);
 }
 
 async function edit(req, res) {
