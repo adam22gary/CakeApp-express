@@ -10,7 +10,7 @@ router.post('/new', celebrate({
         customer_name: Joi.string().required(),
         date: Joi.string().required(),
         recipe_name: Joi.string().required(),
-        total_people: Joi.string().required(),
+        total_people: Joi.number().required(),
         description: Joi.string().required(),
         ingredients_array: Joi.string().required(),
         total_price: Joi.number().required(),

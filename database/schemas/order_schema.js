@@ -14,7 +14,7 @@ const OrderSchema = new Schema({
         required: true
     },
     total_people: {
-        type: String,
+        type: Number,
         required: true
     },
     ingredients_array: {
