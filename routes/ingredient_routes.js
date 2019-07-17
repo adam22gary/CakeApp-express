@@ -18,6 +18,7 @@ router.post('/new', celebrate({
 }),
   IngredientController.newMethod
 );
+
 router.post(
   '/',
   celebrate({
