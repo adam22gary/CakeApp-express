@@ -14,7 +14,7 @@ router.post("/new", celebrate({
         recipe_name: Joi.string().required(),
         total_people: Joi.string().required(),
         description: Joi.string().required(),
-        ingredients_array: Joi.string().required()
+        ingredients_array: Joi.object().required()
         //add more
     }
 }), BaseCakeController.newMethod);
@@ -26,7 +26,7 @@ router.put("/edit/:id", celebrate({
         recipe_name: Joi.string().required(),
         total_people: Joi.string().required(),
         description: Joi.string().required(),
-        ingredients_array: Joi.string().required()
+        ingredients_array: Joi.object().required()
         //add more
     }
 }), BaseCakeController.update);
@@ -36,7 +36,7 @@ router.post("/", celebrate({
         recipe_name: Joi.string().required(),
         total_people: Joi.string().required(),
         description: Joi.string().required(),
-        ingredients_array: Joi.string().required()
+        ingredients_array: Joi.object().required()
     }
 }), BaseCakeController.create);
 
