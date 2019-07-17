@@ -14,7 +14,7 @@ const BaseCakeSchema = new Schema({
         required: true
     },
     ingredients_array: {
-        type: String,
+        type: Object,
         required: true
     },
     baseCake_userID: {
