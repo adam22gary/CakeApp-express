@@ -9,16 +9,24 @@ const OrderSchema = new Schema({
         type: String,
         required: true
     },
+    total_people_new: {
+        type: Number,
+        required: true
+    },
+    order_description: {
+        type: String,
+        required: true
+    },
     recipe_name: {
         type: String,
         required: true
     },
-    total_people: {
-        type: Number,
+    ingredients_array: {
+        type: Object,
         required: true
     },
-    ingredients_array: {
-        type: String,
+    total_people: {
+        type: Number,
         required: true
     },
     description: {
@@ -27,10 +35,15 @@ const OrderSchema = new Schema({
     },
     order_status: {
         type: String,
-        enum: ["current", "completed", "cancelled"]
+        enum: ["current", "completed", "cancelled"],
+        required: true
     },
     total_price: {
         type: Number,
+        required: true
+    },
+    order_userID: {
+        type: String,
         required: true
     }
 });

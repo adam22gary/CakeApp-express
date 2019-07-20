@@ -16,8 +16,6 @@ function register(req, res, next) {
     });
 }
 
-
-
 function login(req, res) {
     const user = req.user;
     const token = JWTService.generateTokenAfterSignIn(user);
