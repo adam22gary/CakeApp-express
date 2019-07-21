@@ -12,13 +12,13 @@ async function index(req, res) {
 }
 
 async function show(req, res) {
-    const { id } = req.params;
-    const sendBack = await Order.find({ 'Order_userID': req.user._id, _id: id })
+    const sendBack = await Order.find({ 'order_userID': req.user._id })
         .catch(() => next("Orders list empty"));
     return res.json(sendBack); 
 }
 
 async function new_order(req, res, next) {
+    console.log("MKMDKC");
     const { id } = req.params;
     const sendBack = await BaseCake.find({ '_id': id })
         .catch(() => next("Orders list empty"));
@@ -26,6 +26,7 @@ async function new_order(req, res, next) {
 }
 
 async function create(req, res) {
+    console.log("im here");
     const { date, customer_name, total_people_new, order_description, recipe_name, ingredients_array, total_people, description, total_price } = req.body;
     
     await Order.create({ 

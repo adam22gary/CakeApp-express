@@ -15,21 +15,19 @@ router.post('/', celebrate({
     body: {
         date: Joi.string().required(),
         customer_name: Joi.string().required(),
-        total_people_new: Joi.number().required(),
+        total_people_new: Joi.string().required(),
         order_description: Joi.string().required(),
         recipe_name: Joi.string().required(),
         ingredients_array: Joi.object().required(),
-        total_people: Joi.number().required(),
+        total_people: Joi.string().required(),
         description: Joi.string().required(),
-        order_status: Joi.string().required(),
-        total_price: Joi.number().required(),
-        order_userID: Joi.string().required()
+        total_price: Joi.number().required()
       }
     }),
     OrderController.create
 );
 
-router.get('/show/:id', OrderController.show);
+router.get('/show', OrderController.show);
 
 router.get('/history', OrderController.history);
 

@@ -10,7 +10,7 @@ const OrderSchema = new Schema({
         required: true
     },
     total_people_new: {
-        type: Number,
+        type: String,
         required: true
     },
     order_description: {
@@ -26,7 +26,7 @@ const OrderSchema = new Schema({
         required: true
     },
     total_people: {
-        type: Number,
+        type: String,
         required: true
     },
     description: {
