@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { celebrate, Joi } = require('celebrate');
-const OrderController = require('./../controllers/Order_controller');
+const OrderController = require('./../controllers/order_controller');
 
 router.get('/', OrderController.baseCake_index);
 
@@ -13,7 +13,7 @@ router.get('/current', OrderController.current);
 
 router.post('/', celebrate({
     body: {
-        date: Joi.string().required(),
+        due_date: Joi.string().required(),
         customer_name: Joi.string().required(),
         total_people_new: Joi.string().required(),
         order_description: Joi.string().required(),
@@ -21,7 +21,7 @@ router.post('/', celebrate({
         ingredients_array: Joi.object().required(),
         total_people: Joi.string().required(),
         description: Joi.string().required(),
-        total_price: Joi.number().required()
+        total_price: Joi.number().required(),
       }
     }),
     OrderController.create
@@ -30,7 +30,5 @@ router.post('/', celebrate({
 router.get('/show', OrderController.show);
 
 router.get('/history', OrderController.history);
-
-router.get('/edit/:id', OrderController.edit);
 
 module.exports = router;

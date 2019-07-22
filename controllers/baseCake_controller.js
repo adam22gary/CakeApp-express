@@ -1,4 +1,5 @@
 const BaseCake = require("./../database/models/baseCake_model");
+const Ingredient = require("./../database/models/ingredient_model");
 
 async function create(req, res) {
     const { recipe_name, total_people, description, ingredients_array } = req.body;
@@ -31,8 +32,26 @@ async function edit(req, res) {
 
 async function index(req, res) {
     const sendBack = await BaseCake.find({ 'baseCake_userID': req.user._id })
-        .catch(() => next("BaseCake list empty"));
-    return res.json(sendBack); 
+    .catch(() => next("BaseCake list empty"));
+    return res.json(sendBack);
+    // let cakes = await BaseCake.find({ 'baseCake_userID': req.user._id })
+
+    // console.log(cakes)
+
+    // const result = cakes.map(c => {
+    //     let totalIngredientsCost = 0
+
+    //     c.ingredients_array.map(i => {
+    //         totalIngredientsCost += parseInt(i.qty) * parseFloat(i.price)
+    //     })
+
+    //     return {
+    //         ...c,
+    //         total_ingredients_cost: totalIngredientsCost
+    //     }
+    // })
+
+    // return res.json(result)
 }
 
 async function show(req, res) {

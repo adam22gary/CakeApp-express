@@ -13,15 +13,12 @@ router.post('/new', celebrate({
     ingredients_quantity: Joi.string().required(),
     ingredients_measurement: Joi.string().required(),
     ingredients_price: Joi.string().required()
-    //.number().integer().positive().min(1).required(),
   }
 }),
   IngredientController.newMethod
 );
 
-router.post(
-  '/',
-  celebrate({
+router.post('/', celebrate({
     body: {
       ingredients_name: Joi.string().required(),
       ingredients_quantity: Joi.string().required(),
