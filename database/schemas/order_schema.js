@@ -1,7 +1,7 @@
 const { Schema } = require("mongoose");
 
 const OrderSchema = new Schema({
-    date: {
+    due_date: {
         type: Date,
         required: true
     },
