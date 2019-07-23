@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { celebrate, Joi } = require('celebrate');
-const OrderController = require('./../controllers/Order_controller');
+const OrderController = require('./../controllers/order_controller');
 
 router.get('/', OrderController.baseCake_index);
 
