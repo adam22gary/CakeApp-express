@@ -5,11 +5,11 @@ const OrderController = require('./../controllers/order_controller');
 
 router.get('/', OrderController.baseCake_index);
 
-router.get('/', OrderController.index);
+router.get('/showAll', OrderController.showAll);
 
 router.get('/new/:id', OrderController.new_order);
 
-router.get('/current', OrderController.current);
+router.delete('/:id', OrderController.destroy);
 
 router.post('/', celebrate({
     body: {
@@ -27,8 +27,8 @@ router.post('/', celebrate({
     OrderController.create
 );
 
-router.get('/show', OrderController.show);
+router.get('/show/:id', OrderController.show);
 
-router.get('/history', OrderController.history);
+// router.get('/edit/:id', OrderController.edit);
 
 module.exports = router;
