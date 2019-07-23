@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const { celebrate, Joi } = require('celebrate');
-const IngredientController = require('./../controllers/Ingredient_controller');
+const IngredientController = require('./../controllers/ingredient_controller');
 
 router.get('/', IngredientController.index);
 
