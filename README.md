@@ -62,27 +62,27 @@ The purpose of this app is to provide a solution to Ornella's Cakes business wit
 
 #### Login Page
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/login_page.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/login_page.png)
 
 #### Main Dashboard
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/main_dashboard.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/main_dashboard.png)
 
 #### Create Order
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/create_order.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/create_order.png)
 
 #### Orders History
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/oodesign-Diagram.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/oodesign-Diagram.png)
 
 #### Ingredients Page
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/ingredients_list.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/ingredients_list.png)
 
 #### Base Cake Recipes
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/basecakes_list.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/basecakes_list.png)
 
 ---
 
@@ -171,31 +171,31 @@ There were four main steps we took when designing the app:
 
 ### User Journey
 
-![User Journey](https://github.com/adam22gary/CakeApp-react/blob/master/docs/user_journey_diagram.png)
+![User Journey](https://github.com/adam22gary/CakeApp-express/blob/master/docs/user_journey_diagram.png)
 
 ### Wireframes
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/wireframe-1.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/wireframe-1.png)
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/wireframe-2.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/wireframe-2.png)
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/wireframe-4.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/wireframe-4.png)
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/wireframe-5.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/wireframe-5.png)
 
 See all wireframes in master/docs folder.
 
 ### Object Relational Diagram
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/object-relational-Diagram.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/object-relational-Diagram.png)
 
 ### Data Flow Diagram
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/data-flow-diagram.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/data-flow-diagram.png)
 
 ### OO Diagram
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/oodesign-Diagram.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/oodesign-Diagram.png)
 
 ---
 
@@ -298,15 +298,15 @@ Following were our steps on this regard:
 
 ### Screenshots of Trello board
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/trello_1.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/trello_1.png)
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/trello_2.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/trello_2.png)
 
 ### Screenshots for Testing
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/test_screenshot1.png.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/test_screenshot1.png.png)
 
-![N|Solid](https://github.com/adam22gary/CakeApp-react/blob/master/docs/test_screenshot2.png)
+![N|Solid](https://github.com/adam22gary/CakeApp-express/blob/master/docs/test_screenshot2.png)
 
 ---
 
