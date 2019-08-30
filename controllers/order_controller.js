@@ -31,7 +31,8 @@ async function create(req, res, next) {
     
     await Order.create({ 
         due_date,
-        customer_name, 
+        customer_name,
+        total_people_new,
         order_description,
         recipe_name,  
         ingredients_array, 

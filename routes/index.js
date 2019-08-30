@@ -8,7 +8,7 @@ const passport = require("passport");
 
 router.get("/", (req, res) => res.send("Hello MOTO"));
 router.use("/auth", AuthRoutes);
-router.use("/baseCakes", passport.authenticate("jwt", { session: false }), BaseCakeRoutes);
+router.use("/basecakes", passport.authenticate("jwt", { session: false }), BaseCakeRoutes);
 router.use("/ingredients", passport.authenticate("jwt", { session: false }), IngredientRoutes);
 router.use("/orders", passport.authenticate("jwt", { session: false }), OrderRoutes);
 
